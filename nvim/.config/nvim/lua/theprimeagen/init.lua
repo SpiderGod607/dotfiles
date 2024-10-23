@@ -79,4 +79,3 @@ vim.api.nvim_create_autocmd("User", {
     end
 })
 vim.keymap.set('n', '<leader>m', ':setlocal modifiable!<CR>', { noremap = true, silent = true })
-
