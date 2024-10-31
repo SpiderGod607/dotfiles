@@ -1,4 +1,4 @@
-@import "mocha.css"; 
+@import "mocha.css";
 
 * {
     font-family: "MesloLGS Nerd Font Mono Bold";
@@ -66,6 +66,7 @@ button:hover {
 #tray,
 #network,
 #mode,
+#backlight,
 #scratchpad {
   margin-top: 2px;
   margin-bottom: 2px;
@@ -85,6 +86,7 @@ button:hover {
     border-bottom: 2px solid @mauve;
 }
 
+#backlight,
 #pulseaudio {
     color: @blue;
     border-bottom: 2px solid @blue;

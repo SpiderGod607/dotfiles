@@ -2,7 +2,7 @@
   "position": "top",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["network", "pulseaudio", "battery", "clock"],
+  "modules-right": ["backlight", "network", "pulseaudio", "battery", "clock"],
   "clock": {
     "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
@@ -36,5 +36,14 @@
           "default": ["", "", " "]
       },
       "on-click": "pavucontrol"
+  },
+  "backlight": {
+    "min": 0,
+    "max": 100,
+    "format": "󰃠  {percent}%",
+    "orientation": "horizontal",
+    "device": "nvidia_wmi_ec_backlight",
+    "on-scroll-up": "brightnessctl s +5%",
+    "on-scroll-down": "brightnessctl s 5%-"
   }
 }
