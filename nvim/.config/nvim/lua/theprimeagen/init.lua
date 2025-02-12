@@ -78,4 +78,8 @@ vim.api.nvim_create_autocmd("User", {
         vim.bo.modifiable = true
     end
 })
+
 vim.keymap.set('n', '<leader>m', ':setlocal modifiable!<CR>', { noremap = true, silent = true })
+
+vim.opt.spell = true
+vim.opt.spelllang = "en"
