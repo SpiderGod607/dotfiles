@@ -34,13 +34,17 @@ map <leader>f <Action>(ReformatCode)
 
 imap <C-l> :action EditorChooseLookupItem<CR>
 
-nmap <leader>pf :action GotoFile<CR>
+""nmap <leader>pf :action GotoFile<CR>
 
 nmap <leader>vca :action ShowIntentionActions<CR>
 
 nmap K :action QuickJavaDoc<CR>
 
 xnoremap <leader>p "dP
+
+map <Leader>pf <action>(com.mituuz.fuzzier.Fuzzier)
+map <Leader>mf <action>(com.mituuz.fuzzier.FuzzyMover)
+map <Leader>gf <action>(com.mituuz.fuzzier.FuzzierVCS)
 
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
